@@ -76,7 +76,7 @@ const structuredNfts = (nfts) => {
 
 const getAllNFTs = async () => {
   try {
-    if (!ethereum) return alert('Please install Metamask')
+    if (!ethereum) return alert('메타마스크 지갑을 설치해주세요')
 
     const contract = await getEtheriumContract()
     const nfts = await contract.methods.getAllNFTs().call()

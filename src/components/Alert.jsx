@@ -8,17 +8,17 @@ const Alert = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-screen h-screen
-      flex items-center justify-center bg-black 
+      flex items-center justify-center bg-white 
       bg-opacity-50 transform transition-transform
       duration-300 ${alert.show ? 'scale-100' : 'scale-0'}`}
     >
       <div
         className="flex flex-col justify-center items-center
-        bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl
+        bg-[#85a6d1] shadow-xl shadow-[#b4b4b4] rounded-xl
         min-w-min py-3 px-10"
       >
         {alert.color == 'red' ? (
-          <FaRegTimesCircle className="text-red-600 text-4xl" />
+          <FaRegTimesCircle className="text-[#FFFFFF] text-4xl" />
         ) : (
           <BsCheck2Circle className="text-green-600 text-4xl" />
         )}

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
 * html {
   padding: 0;
   margin: 0;
@@ -8,23 +7,23 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .gradient-bg-hero {
-  background-color: #151c25;
+  background-color: #f2ffa7;
   background-image: radial-gradient(
       at 0% 0%,
-      hsl(302deg 25% 18%) 0,
+      hsl(138, 80%, 66%) 0,
       transparent 50%
     ),
-    radial-gradient(at 50% 0%, hsl(0deg 39% 30%) 0, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    radial-gradient(at 50% 0%, hsl(78, 84%, 70%) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(212, 243, 128) 0, transparent 50%);
 }
 
-.gradient-bg-artworks {
+.gradient-bg-mypass {
   background-color: #0f0e13;
   background-image: radial-gradient(
       at 50% 50%,
@@ -49,6 +48,8 @@ body {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  
 }
 
 .lds-dual-ring {
@@ -65,6 +66,20 @@ body {
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.nav-link svg {
+  margin-bottom: 0.25rem;
+}
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
@@ -72,6 +87,9 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+nav ul li span {
+  font-size: 0.7rem;
 }
 
 @tailwind base;
